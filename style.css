@@ -1,0 +1,172 @@
+/* 
+    Navbar
+*/
+.navbar{
+    height: 80px;
+}
+
+.navbar-collapse{ 
+     /* giving space between brand name and navbar collapse content */
+    margin-left: 60px;
+}
+
+.navbar-collapse .navbar-nav{
+    gap: 10px;
+}
+
+
+/* 
+    Top Carousel
+*/
+
+.topCarousel-container{
+    margin-top: 140px;
+}
+
+
+/* 
+    Top pick features for cats and dogs
+*/
+
+.topPickfeature-container{
+    margin-top: 60px;
+}
+
+.topPickfeature-container h2{
+    text-align: center;
+}
+
+.topPickfeature-container .row{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topPickfeature-container .row .card .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topPickfeature-container .row .card .card-body .card-price,.card-text{
+ align-self: flex-start;
+}
+
+.topPickfeature-container .row .card img{
+    padding: 20px 10px 20px 10px;
+}
+
+.topPickfeature-container .viewMoreButton{
+    width: 150px;
+}
+
+
+/* 
+    top catagories for dogs and cats
+*/
+
+.topcatagories-container{
+    margin-top: 60px;
+}
+
+.topcatagories-container .row{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topcatagories-container .row .card{
+    gap: 10px;
+    width: 18rem; 
+    height: auto;
+    border-style: none;
+}
+
+.topcatagories-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.topCatagory-link{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.topCatagory-link img{
+    margin-bottom: 5px;
+}
+
+
+/* 
+    Blog container
+*/
+
+
+.blog-container{
+    margin-top: 60px;
+}
+
+.blog-container .row{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-container .row .card{
+    gap: 10px;
+    width: 25rem; 
+    height: 34rem;
+}
+
+.blog-container .row .card .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog-container .row .card img{
+    padding: 20px 10px 20px 10px;
+    height: 250px;
+}
+
+.blog-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-container .viewMoreButton{
+    width: 150px;
+    
+}
+
+
+/* 
+    footer
+*/
+
+.footer-container{
+    background-color: rgb(51, 50, 50);
+    margin-top: 60px;
+}
+
+.footer-section .section-heading{
+    color: orangered;
+}
+
+.footer-section ul .nav-item .nav-link{
+    color: white;
+}
+
+.footer-section p{
+    color: white;
+}
+
+.social-media{
+    width: 30px;
+}

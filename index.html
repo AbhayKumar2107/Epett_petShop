@@ -1,0 +1,497 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+        title - Name of the wesite 
+     -->
+    <title>Epett</title>
+
+    <!-- 
+        custom csss link
+    -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 
+        Bootstrap CDN links for CSS and Javascript 
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- 
+        Navbar
+    -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-2" href="#">Epett</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-body-tertiary" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <!-- Dog Dropdown -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                DOG
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./dogPages/dogFood.html">DOG FOOD</a></li>
+                                <li><a class="dropdown-item" href="./dogPages/dogGrooming.html">DOG GROOMING</a></li>
+                                <li><a class="dropdown-item" href="./dogPages/dogToys.html">DOG TOYS</a></li>
+                                <li><a class="dropdown-item" href="./dogPages/dogAccessories.html">DOG ACCESSORIES</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./dogPages/dogSupplements.html">DOG SUPPLEMENTS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Car Dropdown -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CAT
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./catPages/catFood.html">CAT FOOD</a></li>
+                                <li><a class="dropdown-item" href="./catPages/catGrooming.html">CAT GROOMING</a></li>
+                                <li><a class="dropdown-item" href="./catPages/catToys.html">CAT TOYS</a></li>
+                                <li><a class="dropdown-item" href="./catPages/catAccessories.html">CAT ACCESSORIES</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./catPages/catSupplements.html">CAT SUPPLEMENTS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Bird Dropdown -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BIRD
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./bird/birdFood.html">BIRD FOOD</a></li>
+                                <li><a class="dropdown-item" href="./bird/birdToys.html">BIRD TOYS</a></li>
+                                <li><a class="dropdown-item" href="./bird/birdTreats.html">BIRD TREATS</a></li>
+                                <li><a class="dropdown-item" href="./bird/birdSupplements.html">BIRD SUPPLEMENTS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Learn more -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                LEARN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./learn/blog/blog.html">BLOG</a></li>
+                                <li><a class="dropdown-item" href="./learn/knowYourBreed/knowYourBreed.html">KNOW YOUR
+                                        BREED</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Search</button>
+                    </form>
+
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-danger ms-4">Login/Sign-up</button>
+                        <button type="button" class="btn btn-outline-secondary"><img
+                                src="./images/shopping-cart-empty-side-view.png" alt="" width="20px"></button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 
+            carousel
+        -->
+        <div class="container-xl-12 topCarousel-container">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="./images/carousel/Toys-Banner.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/carousel/hero-banner-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel/hero-banner-3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 
+            cards container [Top Picks dog Food&treats] 
+        -->
+
+        <div class="container topPickfeature-container">
+
+            <h2 class="pb-2 border-bottom">Top Picks: Best Dog Food & Treats</h2>
+
+            <div class="row">
+
+                <!--   card-1   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="./images/topDogFeatures/topDogFeatures-p1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <p class="card-price">₹423</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-2   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="./images/topDogFeatures/topDogFeatures-p2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <p class="card-price">₹562</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-3   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="./images/topDogFeatures/topDogFeatures-p3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <p class="card-price">₹453</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-4   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="./images/topDogFeatures/topDogFeatures-p4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <p class="card-price">₹456</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <a class="btn btn-outline-danger viewMoreButton" href="./dogPages/dogFood.html" role="button">View
+                    More</a>
+
+            </div>
+        </div>
+
+        <!-- 
+            cards container [Top Picks cat food&treats]
+        -->
+
+        <div class="container topPickfeature-container">
+
+            <h2 class="pb-2 border-bottom">Top Picks: Best Cat Food & Treats</h2>
+
+            <div class="row">
+
+                <!--   card-1   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="./images/topCatFeatures/topCatFeature-p1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <p class="card-price">₹423</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-2   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="./images/topCatFeatures/topCatFeature-p2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <p class="card-price">₹562</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-3   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="./images/topCatFeatures/topCatFeature-p3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <p class="card-price">₹453</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-4   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="./images/topCatFeatures/topCatFeature-p4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <p class="card-price">₹456</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <a class="btn btn-outline-danger viewMoreButton" href="./catPages/catFood.html" role="button">View
+                    More</a>
+
+            </div>
+        </div>
+
+        <!-- 
+            top Dog Catagories
+        -->
+
+        <div class="container topcatagories-container">
+
+            <h2 class="pb-2">Top Categories For Your Dog</h2>
+
+            <div class="row">
+
+                <!--   card-1   -->
+
+                <div class="card lg-3 md-6 sm-12">
+                    <a class="topCatagory-link" href="./dogPages/dogFood.html" class="btn"><img
+                            src="./images/topDogCatagories/Dog-Food.jpg" class="card-img-top" alt="...">Dog Food</a>
+                </div>
+
+                <!--   card-2   -->
+
+                <div class="card lg-3 md-6 sm-12">
+                    <a class="topCatagory-link" href="./dogPages/dogGrooming.html" class="btn"><img
+                            src="./images/topDogCatagories/Dog-Gromming.jpg" class="card-img-top" alt="...">Dog
+                        Grooming</a>
+                </div>
+
+                <!--   card-3   -->
+
+                <div class="card lg-3 md-6 sm-12">
+                    <a class="topCatagory-link" href="./dogPages/dogToys.html" class="btn"><img
+                            src="./images/topDogCatagories/Dog-Toys.jpg" class="card-img-top" alt="...">Dog Toys</a>
+                </div>
+
+                <!--   card-4   -->
+
+                <div class="card lg-3 md-6 sm-12">
+                    <a class="topCatagory-link" href="./dogPages/dogAccessories.html" class="btn"><img
+                            src="./images/topDogCatagories/Dog-Accessories.jpg" class="card-img-top" alt="...">Dog
+                        Accessories</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            Top Cat Catagories
+        -->
+
+        <div class="container topcatagories-container">
+
+            <h2 class="pb-2">Top Categories For Your Cat</h2>
+
+            <div class="row">
+
+                <!--   card-1   -->
+
+                <div class="card lg-3 md-6 sm-12">
+                    <a class="topCatagory-link" href="./catPages/catFood.html" class="btn"><img
+                            src="./images/topCatCatagories/Cat-food.jpg" class="card-img-top" alt="...">Cat Food</a>
+                </div>
+
+                <!--   card-2   -->
+
+                <div class="card lg-3 md-6 sm-12">
+                    <a class="topCatagory-link" href="./catPages/catGrooming.html" class="btn"><img
+                            src="./images/topCatCatagories/Cat-Gromming.jpg" class="card-img-top" alt="...">Cat
+                        Grooming</a>
+                </div>
+
+                <!--   card-3   -->
+
+                <div class="card lg-3 md-6 sm-12">
+                    <a class="topCatagory-link" href="./catPages/catToys.html" class="btn"><img
+                            src="./images/topCatCatagories/Cat-Toys.jpg" class="card-img-top" alt="...">Cat Toys</a>
+                </div>
+
+                <!--   card-4   -->
+
+                <div class="card lg-3 md-6 sm-12">
+                    <a class="topCatagory-link" href="./catPages/catAccessories.html" class="btn"><img
+                            src="./images/topCatCatagories/Cat-Accessories.jpg" class="card-img-top" alt="...">Cat
+                        Accessories</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            Blog section [learn with Epett]
+        -->
+
+        <div class="container blog-container">
+
+            <h2 class="pb-2">Learn With Petsy</h2>
+
+            <div class="row">
+
+                <!--   card-1   -->
+
+                <div class="card lg-3 md-1 sm-12">
+                    <img src="./images/blogImages/bolg-summer-dog.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">5 Yummy Summer Foods for Dogs</h5>
+                        <p class="card-text">Scorching temperatures are around the corner, and your furry pal is sure to
+                            feel the heat too. If you're wondering, “how to cool my dog down?”, you're not alone in this
+                            query. Many pet parents are confused about what dogs...</p>
+                        <a href="./learn/blog/blog.html" class="btn btn-danger">Read now</a>
+                    </div>
+                </div>
+
+                <!--   card-2   -->
+
+                <div class="card lg-3 md-6 sm-12">
+                    <img src="./images/blogImages/blog-summerTip-dog.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Beat the heat - Summer care tips for pets</h5>
+                        <p class="card-text">Keeping pets cool in the summer might need a little extra care during the
+                            scorching summer months to ensure their health and well-being. As temperatures soar, pets
+                            are more susceptible to heat-related illnesses such as heatstroke, dehydration, and burnt
+                            paw...</p>
+                        <a href="./learn/blog/blog.html" class="btn btn-danger">Read now</a>
+                    </div>
+                </div>
+
+                <!--   card-3   -->
+
+                <div class="card lg-3 md-6 sm-12">
+                    <img src="./images/blogImages/blog-grey-cat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Create a cat-friendly environment for your new feline friend</h5>
+                        <p class="card-text">Kittens are extremely curious and energetic animals with boundless energy.
+                            Creating a safe and enriching environment at home will cater to your kitten's playful side,
+                            provide much needed physical and mental stimulus, and positively impact their health and
+                            development for...</p>
+                        <a href="./learn/blog/blog.html" class="btn btn-danger">Read now</a>
+                    </div>
+                </div>
+
+                <a class="btn btn-outline-danger viewMoreButton" href="./learn/blog/blog.html" role="button">View
+                    More</a>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- 
+        Footer
+    -->
+
+    <footer class="footer-container">
+        <div class="container">
+            <div class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3 footer-section">
+                        <h5 class="section-heading">Shop Now</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="./dogPages/dogFood.html" class="nav-link p-0">Dog</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="./catPages/catFood.html" class="nav-link p-0">Cat</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="./bird/birdFood.html" class="nav-link p-0">Bird</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3 footer-section">
+                        <h5 class="section-heading">Customer Policy</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Terms of Use</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy Policy</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Return Policy</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Shipping Policy</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3 footer-section">
+                        <h5 class="section-heading">The Epett Difference</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="./learn/blog/blog.html" class="nav-link p-0">Articles</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Giving Back</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3 footer-section">
+                        <form>
+                            <h5 class="section-heading">Subscribe to our newsletter</h5>
+                            <p>For us it's all about the love for Pets! Subscribe to our Newsletter and receive special
+                                promotions and fun content!</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-danger" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top footer-section">
+                    <p>© 2024 Company, Inc. All rights reserved.</p>
+                    <p>[ Made With By 🤍 Abhay ]</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-body-emphasis" href="https://x.com/?lang=en"><img
+                                    class="social-media" src="./images/socialMediaPNGs/twitter-X.png" alt=""></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/"><img
+                                    class="social-media" src="./images/socialMediaPNGs/instagram.png" alt=""></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/"><img
+                                    class="social-media" src="./images/socialMediaPNGs/facebook.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
