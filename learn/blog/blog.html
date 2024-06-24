@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epett - Blog</title>
+
+    <!-- 
+        custom csss link
+    -->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <link rel="stylesheet" href="../../learn/blog/blog.css" />
+
+    <!-- 
+        Bootstrap CDN links for CSS and Javascript 
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 
+        Navbar
+    -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-2" href="#">Epett</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-body-tertiary" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">HOME</a>
+                        </li>
+                        <!-- Dog Dropdown -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                DOG
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../../dogPages/dogFood.html">DOG FOOD</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../dogPages/dogGrooming.html">DOG GROOMING</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../dogPages/dogToys.html">DOG TOYS</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../dogPages/dogAccessories.html">DOG
+                                        ACCESSORIES</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../dogPages/dogSupplements.html">DOG
+                                        SUPPLEMENTS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Car Dropdown -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CAT
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../../catPages/catFood.html">CAT FOOD</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../catPages/catGrooming.html">CAT GROOMING</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../catPages/catToys.html">CAT TOYS</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../catPages/catAccessories.html">CAT
+                                        ACCESSORIES</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../catPages/catSupplements.html">CAT
+                                        SUPPLEMENTS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Bird Dropdown -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BIRD
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../../bird/birdFood.html">BIRD FOOD</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../bird/birdToys.html">BIRD TOYS</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../bird/birdTreats.html">BIRD TREATS</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../bird/birdSupplements.html">BIRD SUPPLEMENTS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Learn more -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                LEARN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../../learn/blog/blog.html">BLOG</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../learn/knowYourBreed/knowYourBreed.html">KNOW
+                                        YOUR BREED</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-danger" type="submit">
+                            Search
+                        </button>
+                    </form>
+
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-danger ms-4">Login/Sign-up</button>
+                        <button type="button" class="btn btn-outline-secondary"><img src="../../images/shopping-cart-empty-side-view.png" alt="" width="20px"></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container blogPage-container">
+            <h2 class="pb-2 border-bottom">Learn With Petsy</h2>
+
+            <div class="column">
+                <!--
+                ---------------------- row 1 
+            -->
+
+                <div class="row">
+                    <!--   card-1   -->
+
+                    <div class="card lg-3 md-1 sm-12">
+                        <img src="../../learn/blog/blogPageImages/bolg-summer-dog.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">5 Yummy Summer Foods for Dogs</h5>
+                            <p class="card-text">
+                                Scorching temperatures are around the corner, and your furry
+                                pal is sure to feel the heat too. If you're wondering, “how to
+                                cool my dog down?”, you're not alone in this query. Many pet
+                                parents are confused about what dogs...
+                            </p>
+                            <a href="#" class="btn btn-danger">Read now</a>
+                        </div>
+                    </div>
+
+                    <!--   card-2   -->
+
+                    <div class="card lg-3 md-6 sm-12">
+                        <img src="../../learn/blog/blogPageImages/blog-summerTip-dog.jpg" class="card-img-top"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Beat the heat - Summer care tips for pets
+                            </h5>
+                            <p class="card-text">
+                                Keeping pets cool in the summer might need a little extra care
+                                during the scorching summer months to ensure their health and
+                                well-being. As temperatures soar, pets are more susceptible to
+                                heat-related illnesses such as heatstroke, dehydration, and
+                                burnt paw...
+                            </p>
+                            <a href="#" class="btn btn-danger">Read now</a>
+                        </div>
+                    </div>
+
+                    <!--   card-3   -->
+
+                    <div class="card lg-3 md-6 sm-12">
+                        <img src="../../learn/blog/blogPageImages/blog-grey-cat.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Create a cat-friendly environment for your new feline friend
+                            </h5>
+                            <p class="card-text">
+                                Kittens are extremely curious and energetic animals with
+                                boundless energy. Creating a safe and enriching environment at
+                                home will cater to your kitten's playful side, provide much
+                                needed physical and mental stimulus, and positively impact
+                                their health and development for...
+                            </p>
+                            <a href="#" class="btn btn-danger">Read now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+            ---------------------------------- row 2
+             -->
+                <div class="row">
+                    <!--   card-1   -->
+
+                    <div class="card lg-3 md-1 sm-12">
+                        <img src="../../learn/blog/blogPageImages/cat-eating-food.jpeg" class="card-img-top"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Reading cat food labels</h5>
+                            <p class="card-text">
+                                Whether you’ve recently welcomed a new kitten into your home,
+                                or you are a parent to a fussy feline with specific food
+                                preferences, it’s important to be knowledgeable on
+                                understanding and deciphering cat food labels to ensure that
+                                your cat’s...
+                            </p>
+                            <a href="#" class="btn btn-danger">Read now</a>
+                        </div>
+                    </div>
+
+                    <!--   card-2   -->
+
+                    <div class="card lg-3 md-6 sm-12">
+                        <img src="../../learn/blog/blogPageImages/catImage-r2c2.jpeg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Introducing your kitten to solid food - Understanding kitten
+                                food transition
+                            </h5>
+                            <p class="card-text">
+                                Have a new kitten in the family? Congratulations on finding a
+                                new furry feline friend! To get a better understanding about
+                                kitten health and wellness, let us first take a look at what
+                                the ideal transition phases for kittens are...
+                            </p>
+                            <a href="#" class="btn btn-danger">Read now</a>
+                        </div>
+                    </div>
+
+                    <!--   card-3   -->
+
+                    <div class="card lg-3 md-6 sm-12">
+                        <img src="../../learn/blog/blogPageImages/dog-eating-food.jpeg" class="card-img-top"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Must-have dog accessories for your furry friend’s well-being
+                            </h5>
+                            <p class="card-text">
+                                Your dog is a part of your life, but for your dog, you are its
+                                whole life! Our dogs enrich our lives with their love,
+                                attention, loyalty and unbridled joy, so it’s only right that
+                                we reciprocate this affection in..
+                            </p>
+                            <a href="#" class="btn btn-danger">Read now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 
+                ------------------------- row 3
+            -->
+                <div class="row">
+                    <!--   card-1   -->
+
+                    <div class="card lg-3 md-1 sm-12">
+                        <img src="../../learn/blog/blogPageImages/dog bed.jpeg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Understanding dog food types - Kibble, wet, raw & home-made
+                            </h5>
+                            <p class="card-text">
+                                Finding the “right” dog food for your furry friend can be
+                                quite a confusing process, considering the many varieties and
+                                flavors available in the market today. It can help to get a
+                                deeper understanding of the dog food types available,...
+                            </p>
+                            <a href="#" class="btn btn-danger">Read now</a>
+                        </div>
+                    </div>
+
+                    <!--   card-2   -->
+
+                    <div class="card lg-3 md-6 sm-12">
+                        <img src="../../learn/blog/blogPageImages/cat-image-for-last-card.jpeg" class="card-img-top"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                How to introduce a new dog bed - Easy dog bed introduction
+                                tips
+                            </h5>
+                            <p class="card-text">
+                                Introducing a new dog bed to your canine buddy might seem like
+                                a simple enough task, but as any experienced dog parent can
+                                tell you, it’s easier said than done! The main reason for this
+                                apparent reluctance to immediately jump...
+                            </p>
+                            <a href="#" class="btn btn-danger">Read now</a>
+                        </div>
+                    </div>
+
+                    <!--   card-3   -->
+
+                    <div class="card lg-3 md-6 sm-12">
+                        <img src="../../images/blogImages/blog-grey-cat.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Cat treats and obesity</h5>
+                            <p class="card-text">
+                                As awareness about health and nutrition is spreading across
+                                the globe, we humans are constantly seeking healthier choices
+                                to snack on. The same care and consideration should go towards
+                                picking the right treats for your cats as well, to ensure...
+                            </p>
+                            <a href="#" class="btn btn-danger">Read now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 
+        Footer
+    -->
+
+    <footer class="footer-container">
+        <div class="container">
+            <div class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3 footer-section">
+                        <h5 class="section-heading">Shop Now</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="../../dogPages/dogFood.html" class="nav-link p-0">Dog</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="../../catPages/catFood.html" class="nav-link p-0">Cat</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="../../bird/birdFood.html" class="nav-link p-0">Bird</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3 footer-section">
+                        <h5 class="section-heading">Customer Policy</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Terms of Use</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Return Policy</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Shipping Policy</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3 footer-section">
+                        <h5 class="section-heading">The Epett Difference</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="../../learn/blog/blog.html" class="nav-link p-0">Articles</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Giving Back</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3 footer-section">
+                        <form>
+                            <h5 class="section-heading">Subscribe to our newsletter</h5>
+                            <p>
+                                For us it's all about the love for Pets! Subscribe to our
+                                Newsletter and receive special promotions and fun content!
+                            </p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+                                <button class="btn btn-danger" type="button">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top footer-section">
+                    <p>© 2024 Company, Inc. All rights reserved.</p>
+                    <p>[ Made With By 🤍 Abhay ]</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="https://x.com/?lang=en"><img class="social-media"
+                                    src="../../images/socialMediaPNGs/twitter-X.png" alt="" /></a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="https://www.instagram.com/"><img class="social-media"
+                                    src="../../images/socialMediaPNGs/instagram.png" alt="" /></a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="https://www.facebook.com/"><img class="social-media"
+                                    src="../../images/socialMediaPNGs/facebook.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
