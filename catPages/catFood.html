@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epett - Cat Food</title>
+
+    <!-- 
+        custom csss link
+    -->
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="stylesheet" href="cat.css">
+
+    <!-- 
+        Bootstrap CDN links for CSS and Javascript 
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- 
+        Navbar
+    -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-2" href="#">Epett</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-body-tertiary" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                        </li>
+                        <!-- Dog Dropdown -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                DOG
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../dogPages/dogFood.html">DOG FOOD</a></li>
+                                <li><a class="dropdown-item" href="../dogPages/dogGrooming.html">DOG GROOMING</a></li>
+                                <li><a class="dropdown-item" href="../dogPages/dogToys.html">DOG TOYS</a></li>
+                                <li><a class="dropdown-item" href="../dogPages/dogAccessories.html">DOG ACCESSORIES</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../dogPages/dogSupplements.html">DOG SUPPLEMENTS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Car Dropdown -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CAT
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../catPages/catFood.html">CAT FOOD</a></li>
+                                <li><a class="dropdown-item" href="../catPages/catGrooming.html">CAT GROOMING</a></li>
+                                <li><a class="dropdown-item" href="../catPages/catToys.html">CAT TOYS</a></li>
+                                <li><a class="dropdown-item" href="../catPages/catAccessories.html">CAT ACCESSORIES</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../catPages/catSupplements.html">CAT SUPPLEMENTS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Bird Dropdown -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BIRD
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../bird/birdFood.html">BIRD FOOD</a></li>
+                                <li><a class="dropdown-item" href="../bird/birdToys.html">BIRD TOYS</a></li>
+                                <li><a class="dropdown-item" href="../bird/birdTreats.html">BIRD TREATS</a></li>
+                                <li><a class="dropdown-item" href="../bird/birdSupplements.html">BIRD SUPPLEMENTS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Learn more -->
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                LEARN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../learn/blog/blog.html">BLOG</a></li>
+                                <li><a class="dropdown-item" href="../learn/knowYourBreed/knowYourBreed.html">KNOW YOUR
+                                        BREED</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Search</button>
+                    </form>
+
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-danger ms-4">Login/Sign-up</button>
+                        <button type="button" class="btn btn-outline-secondary"><img src="../images/shopping-cart-empty-side-view.png" alt="" width="20px"></button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 
+            Container for cards on 1st row
+        -->
+
+        <div class="container topPickfeature-container firstRowcat-Container">
+
+            <h2 class="pb-2 border-bottom">Cat Food</h2>
+
+            <div class="row">
+
+                <!--   card-1   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c1-r1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Whiskas Dry Cat Food for Mother and Babycat, Ocean Fish Flavour</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(4.9)| 112 reviews</p>
+                        <p class="card-price">₹207</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-2   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c2-r1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Royal Canin Fit Adult Dry Cat Food</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(4.9)| 31 reviews</p>
+                        <p class="card-price">₹360</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-3   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c3-r1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">whiskas kitten (2-12 months) wet cat food,tuna in jelly,12 pouches</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(4.9)| 51 reviews</p>
+                        <p class="card-price">₹540</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-4   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c4-r1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Whiskas Dry Cat Food for Adult cats (1+ years), ocean fish flavour</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(5.0)| 53 reviews</p>
+                        <p class="card-price">₹212</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 
+            Container for cards in 2nd row 
+        -->
+
+        <div class="container topPickfeature-container">
+            <div class="row">
+
+                <!--   card-1   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c1-r2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Whiskas Adult (1+ years) wet cat food, chicken in gravy, 12 pouches</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(4.7)| 43 reviews</p>
+                        <p class="card-price">₹540</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-2   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c2-r2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">me-o creamy cat treats - crab</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(4.9)| 33 reviews</p>
+                        <p class="card-price">₹95</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-3   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c3-r2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">whiskas Adult (1+ year) wet cat food,tuna in jelly,12 pouches</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(49)| 35 reviews</p>
+                        <p class="card-price">₹540</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-4   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c4-r2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Royal canin persian adult breed dry cat food</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(4.9)| 34 reviews</p>
+                        <p class="card-price">₹522</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 
+            Container for cards on 3rd Row 
+        -->
+
+        <div class="container topPickfeature-container">
+            <div class="row">
+
+                <!--   card-1   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c1-r3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">sheba wet cat food - maguro & Bream (35g x 12 pouches)</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(5.0)| 21 reviews</p>
+                        <p class="card-price">₹540</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-2   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c2-r3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">sheba premium wet cat food - chicken with tuna in gravy(Adult 1+)</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(5.0)| 17 reviews</p>
+                        <p class="card-price">₹756</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-3   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c3-r3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">sheba wet cat food - fish with sesami (35g x 12 pouches)</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(4.9)| 11 reviews</p>
+                        <p class="card-price">₹540</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-4   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c4-r3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">sheba wet cat food - fish with dry bonito flake (35g x 12 pouches)</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(5.0)| 14 reviews</p>
+                        <p class="card-price">₹540</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            Container for cards on 4th Row 
+        -->
+
+        <div class="container topPickfeature-container">
+            <div class="row">
+
+                <!--   card-1   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c1-r4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">me-o creamy cat treats - chicken & liver</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(5.0)| 29 reviews</p>
+                        <p class="card-price">₹95</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-2   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c2-r4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Temptations cat treats - savory salmon flavor - 85g</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(4.7)| 21 reviews</p>
+                        <p class="card-price">₹143</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-3   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c3-r4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Temptations cat treats - seafood medly flavor - 85g</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(5.0)| 26 reviews</p>
+                        <p class="card-price">₹143</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+
+                <!--   card-4   -->
+
+                <div class="card lg-3 md-6 sm-1" style="width: 18rem;">
+                    <img src="../catPages/catImages/catFoodImages/cat-food-c4-r4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">kittos cat treat - sunfish and chicken twirls(35kg)</p>
+                        <p class="rating-stars">⭐⭐⭐⭐⭐(5.0)| 18 reviews</p>
+                        <p class="card-price">₹119</p>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 
+        Footer     
+    -->
+
+    <footer class="footer-container">
+        <div class="container">
+            <div class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3 footer-section">
+                        <h5 class="section-heading">Shop Now</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="../dogPages/dogFood.html" class="nav-link p-0">Dog</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="../catPages/catFood.html" class="nav-link p-0">Cat</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="../bird/birdFood.html" class="nav-link p-0">Bird</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3 footer-section">
+                        <h5 class="section-heading">Customer Policy</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Terms of Use</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy Policy</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Return Policy</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Shipping Policy</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3 footer-section">
+                        <h5 class="section-heading">The Epett Difference</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="../learn/blog/blog.html"
+                                    class="nav-link p-0">Articles</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Giving Back</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3 footer-section">
+                        <form>
+                            <h5 class="section-heading">Subscribe to our newsletter</h5>
+                            <p>For us it's all about the love for Pets! Subscribe to our Newsletter and receive special
+                                promotions and fun content!</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-danger" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top footer-section">
+                    <p>© 2024 Company, Inc. All rights reserved.</p>
+                    <p>[ Made With By 🤍 Abhay ]</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-body-emphasis" href="https://x.com/?lang=en"><img
+                                    class="social-media" src="../images/socialMediaPNGs/twitter-X.png" alt=""></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/"><img
+                                    class="social-media" src="../images/socialMediaPNGs/instagram.png" alt=""></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/"><img
+                                    class="social-media" src="../images/socialMediaPNGs/facebook.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
